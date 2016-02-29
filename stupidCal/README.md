@@ -1,0 +1,1 @@
+a Super stupid Calculato can remember what you calculated

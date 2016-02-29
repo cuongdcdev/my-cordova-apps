@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <style>
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }                          
+        @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }                                    
+        @viewport { user-zoom: fixed ; }
+    </style>
+    <title>Crazy Colors </title>
+    <link rel='stylesheet' type='text/css' href='css/main.css' />
+    <link rel='stylesheet' type='text/css' href='css/bootstrap.min.css' />
+    <link rel='stylesheet' type='text/css' href='css/animate.css'/>
+    <script src='js/jquery.js'></script>
+    <script src='js/fastclick.js'></script>
+    <script src="js/jquery.animate-colors-min.js"></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script src='js/squishy.min.js'></script>
+    <script src='js/main.js'></script>
+</head>
+
+<body>
+<div id='mainContent'>
+    <audio id='backgroundSound'>
+        <source src='sounds/bg.mp3' type='audio/mpeg' autoplay loop>
+    </audio>
+    
+    <audio id='tickSound'>
+        <source src='sounds/tick.mp3' type='audio/mpeg'>
+    </audio>
+    
+    <audio id='overSound'>
+        <source src='sounds/wellDone.mp3' type='audio/mpeg'>
+    </audio>
+    
+    <div id='gameMenu'>
+          <div id='gameName'><p>Crazy Colors!</p></div>
+            <div id='highScoreScreen'>
+        <!-- high score -->
+        <span style='glyphicon glyphicon-volume-up'>100<sup class='glyphicon glyphicon-star-empty'></sup></span>
+
+    </div>
+            <p id='playButton'>play</p>
+        
+    </div><!--end gameMenu-->    
+    
+    <div id='gamePlay' style='display:none' >
+        <p id='score'>SCORE</p>
+        <p id='score_display'>0</p>
+        <p id='highScore'>HIGH SCORE</p>
+        <p id='hightScore_display'>0</p>
+        <p class='text'>asdasda</p>
+        <div id="chooseTrue" class='animate glyphicon glyphicon-ok action-button shadow animate green '></div>
+        <div id="chooseFalse" class=' animate glyphicon glyphicon-remove action-button shadow animate red '></div>
+    </div><!--end GamePlay-->
+    
+    <div id='gameOver' style='display:none'>
+        <p id='yourScore'>100</p>
+        <p id='comment'>dude... :v </p>
+        <p id='replayButton'><span class='glyphicon glyphicon-repeat'></span></p>
+    </div><!--end gameOver-->
+    
+    
+     <script src="intelxdk.js"></script>        
+    <script src="cordova.js"></script>          
+    <script src="xhr.js"></script>              
+
+    <script src="js/app.js"></script>
+    <script src="js/init-app.js"></script>
+    <script src="xdk/init-dev.js"></script>
+</div><!--end main Content -->

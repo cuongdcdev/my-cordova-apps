@@ -1,0 +1,206 @@
+/* Reset
+------------------------------------------------------------ */
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { background:#ffffff; font-size: 13px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}	
+a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display: block;
+	}
+	
+/* Structure */
+html{
+/*    dinh nghia font size qua rem (root of em )*/
+    font-size :62.5% ; 
+/*    tuong ung voi 1rem =  10px*/
+    height : 100%;
+    min-height : 100%;
+}
+#wrapper {
+	width: 96%;	
+	max-width: 920px;
+	margin: auto;
+	padding: 2%;
+    background-color :  #9dd2ea;
+    background: linear-gradient(#9dd2ea, #8bceec);
+    border-radius: 3px;
+    box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
+    font-size : 1.6rem;
+    padding-bottom:100%;
+    background-size : cover;
+	} 
+
+
+/*phan screen khung dap so */
+.screen-wrapper{
+    width : 100%;
+    min-height : 5rem;
+    margin-bottom : 2%;
+    overflow-y: scroll;
+}
+			
+    .answer-screen{
+    width : 100%;
+    float : left;
+    min-height : 105px;
+    background: rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+    
+    	/* Typography */
+	font-size: 1.7rem;
+	line-height: 4rem;
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: right;
+	letter-spacing: 1px;
+    }
+
+    .answered-screen{
+        width : 100%;
+        float : left;
+        overflow-y : scroll;
+    }
+/*tao phim */
+    .keys-wrapper{
+        width : 100%;
+        float : left;
+        transition : all 0.5 ease;
+    }
+    .keys span{
+        position : relative;
+        float : left;
+        cursor: pointer;
+        width : 22%;
+        min-height :2.6rem; 
+        background : white;
+        border-radius : 3%;
+        overflow : hidden;
+        box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+        margin: 0 7px 11px 0;
+        color: #888;
+/*	   line-height: 36px;*/
+	   text-align: center;
+/*        position : relative;*/
+/*        top : 0px;*/
+        user-select : none;
+        transition: all 0.2s ease;
+
+    }
+
+    .keys span:hover{
+  	
+	box-shadow: 0px 0px #6b54d3;
+	color: white;
+    top : 4px;  
+    background-color : #A493F7;
+    }
+
+.answered{
+width: 100%;
+float: left;
+min-height: 20px;
+background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.2);
+border-radius: 3px;
+box-shadow: 0px 4px rgba(0, 0, 0, 0.2) inset;
+overflow: scroll;
+font-size: 12px;
+line-height: 40px;
+color: #FFF;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+text-align: right;
+letter-spacing: 1px;
+
+}
+/*style cho phim chuc nang */
+.top-buttons{
+    margin : 0 auto;
+}
+     .clear{
+        width : 50%;
+        float : right;
+        background : #ff9fa8;
+        box-shadow: 0px 4px #ff7c87;
+        color: white;
+        min-height : 36px;
+        margin-bottom : 2%;
+        text-align: center;
+         margin-left : 2%;
+         margin-right:8%;
+    }
+
+    .clear:hover{
+            color: white;
+            top: 4px;  
+            background-color : #A493F7;
+          box-shadow: 0px 0px #A493F7;
+    }
+    .percent{
+        width : 40%;
+        float : left;
+        background : #ff9fa8;
+        box-shadow: 0px 4px #ff7c87;
+        color: white;
+        min-height : 36px;
+        margin-bottom : 2%;
+        text-align: center;
+        line-height: 36px;
+        
+    }
+     .percent:hover{
+            color: white;
+            top : 4px;  
+            background-color : #A493F7;
+            box-shadow: 0px 0px #d3545d;
+    }
+        .keys span.operator{
+            background: #FFF0F5;
+            margin-right: 0;
+        }
+
+        .keys span.operator:hover{
+            color: white;
+            top : 4px;  
+            background-color : #A493F7;
+        }
+
+        .keys span.eval{
+            background : #f1ff92;
+            box-shadow: 0px 4px #9da853;
+            color: #888e5f;
+        }
+
+        .keys span.eval:hover{
+             color: white;
+            top : 4px;  
+            background-color : #A493F7;
+        }
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+
+	header nav, #main, aside {
+		float: left;
+		clear: left;
+		margin: 0 0 10px; 
+		width: 100%;
+		}	
+		header nav li {
+			margin: 0;
+			background: #efefef;
+			display: block;
+			margin-bottom: 3px;
+			}
+			header nav a {
+				display: block;
+				padding: 10px;
+				text-align: center;
+				}			
+}

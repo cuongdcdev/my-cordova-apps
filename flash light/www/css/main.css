@@ -1,0 +1,109 @@
+/* Reset
+------------------------------------------------------------ */
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;overflow-x: hidden}
+body { background:#ffffff; font-size: 13px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}	
+a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display: block;
+	}
+	
+/* Structure */
+html{
+    background-color : black;
+
+}
+#wrapper {
+    position : absolute;
+    height : 100%;  
+	width: 100%;	
+	margin: auto;
+    background-color : black;
+    min-height : 100%;
+} 
+.main-button{
+    position:absolute;
+    width : 100%;
+    background-color : black;
+    transform: translateY(-50%);
+    top:50%;
+    left : 0 ;
+}
+.main-button img {
+/*    background : url(../img/cricle.svg);*/
+    width : 80%;
+    height : 80%;
+    margin : 0 auto;
+}
+
+.text{
+position: absolute;
+transform: translateY(-50%);
+display: block;
+text-align: center;
+color: white;
+background-color: black;
+top: 50%;
+}
+
+.lock-status{
+    text-align: center;
+    font-size : 0.5em;
+    color : white;
+    min-width : 20%;
+    float : right;
+    margin-bottom : 0;
+    position : fixed;
+    bottom : 5%;
+    right : 5%;
+}
+
+.about{
+    
+    text-align: center;
+    font-size : 0.5em;
+    color : white;
+    min-width : 20%;
+    margin-bottom : 0;
+    position : fixed;
+    bottom : 5%;
+    left : 5%;
+
+}
+.big-text{
+    font-size : 3.8em;
+}
+#sos{
+    margin:0 auto;
+    margin-top:10%;
+    padding : 0% 5%;
+    border-radius: 15% ;
+    text-align: center;
+    width : 30%;
+    height : 10%;
+    transition:all 1s ease;
+    -ms-transition : all 1s ease;
+    
+}
+.sos-off{
+    border:2px solid white;
+    color: #FFF;
+}
+.sos-on{
+border:2px solid yellow;
+    color: yellow;
+
+}
+.toWhite{
+    color : white;
+}
+.toYellow{
+    color : #FAE524;
+}

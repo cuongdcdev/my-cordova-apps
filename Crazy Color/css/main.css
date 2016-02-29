@@ -1,0 +1,309 @@
+/*RESET CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*END RESET */
+html{
+    -webkit-user-select : none;
+       -moz-user-select : none;
+        -ms-user-select : none;
+            user-select : none;
+}
+#gameName{
+    float : left;
+    display : block;
+    text-align: center;
+    font-size: 10vw;
+    margin-left : 20%;
+    margin-top:-110%;
+    color : white;
+}
+
+#playButton{
+position : absolute;
+margin : 0 auto;
+font-size : 13vw;
+display: block;
+text-align : center;
+color : white;
+}
+
+#replayButton{
+position : absolute;
+margin : 0 auto;
+font-size : 13vw;
+display: block;
+text-align : center;
+color : white;
+}
+.sound {
+float: right;
+font-size: 9vw;
+color: #FFF;
+margin-top: 45%;
+margin-right: 44%;
+}
+
+#highScoreScreen{
+margin-top : 32%;
+float : left;
+font-size : 25vw;
+margin-left : 20%;
+color : white;
+border:2px solid white;
+border-radius : 15px;
+min-width: 50%;
+text-align: center;
+padding: 5%;
+}
+
+#yourScore{
+float: left;
+font-size: 25vw;
+margin-left: 27%;
+color: #FFF;
+border: 2px solid #FFF;
+border-radius: 15px;
+width: 50%;
+padding: 2%;
+margin-top: 19%;
+text-align: center;
+}
+
+#comment{
+float: left;
+display: block;
+text-align: center;
+font-size: 10vw;
+margin-left: 34%;
+margin-top: 5%;
+color: #FFF;
+
+}
+/*
+    .text{
+        border-radius : 3000px;
+        box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+        background-color : white;
+        border : 2px solid white ;
+        padding : 10% ;
+        font-weight: bolder;
+        position : relative;
+        z-index : 2 !important;
+    } 
+
+*/
+
+.text{
+        border-radius : 3000px;
+        box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+        background-color : white;
+        border : 2px solid white ;
+        padding : 10% ;
+        font-weight: bolder;
+        position : relative;
+        z-index : 2 !important;
+    }
+
+    #chooseFalse{
+        position : absolute;
+        right : 0 ;
+        bottom : 5;
+        width : 40%;
+    }
+
+    .toLeft{
+        left :0px; 
+    }
+    .toRight{
+        right : 0px;
+    }
+    #chooseTrue{
+        position : absolute;
+/*        left : 0;*/
+        bottom : 5;
+        width : 40%;
+    }
+
+    #score{
+        font-weight: bolder;
+        position : absolute;
+        top:0.5em;
+        right: 1em;
+        font-size : 5vw;
+        font-family: "Comic Sans MS",sans-serif;
+        color : white;
+    }
+            #score_display{
+                  font-weight: bolder;
+                    position : absolute;
+                    top:0.8em;
+                    right: 1em;
+                    font-size : 10vw;
+                    font-family: "Comic Sans MS",sans-serif;
+                    color : white;
+            }
+            #highScore{
+                      font-weight: bolder;
+                    position : absolute;
+                    top:0.5em;
+                    left: 1em;
+                    font-size : 5vw;
+                    font-family: "Comic Sans MS",sans-serif;
+                    color : white;
+            }
+            #hightScore_display{
+                      font-weight: bolder;
+                    position : absolute;
+                    top:0.8em;
+                    left: 1em;
+                    font-size : 10vw;
+                    font-family: "Comic Sans MS",sans-serif;
+                    color : white;
+                    
+            }
+/*      effects : */
+
+    /* Shutter Out Horizontal cho button */
+    .hvr-shutter-out-horizontal {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      background: #e1e1e1;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 3s;
+      transition-duration: 3s;
+    }
+    .hvr-shutter-out-horizontal:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #2098d1;
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+      -webkit-transform-origin: 50%;
+      -ms-transform-origin: 50%;
+          transform-origin: 50%;
+      -webkit-transition-property: -webkit-transform;
+      transition-property: transform;
+      -webkit-transition-duration: 3s;
+      transition-duration: 3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+        .animate
+        {
+            transition: all 0.1s  !important;
+            -webkit-transition: all 0.1s !important;
+            -moz-transition : all 0.1s !important;
+        }
+
+        .action-button
+        {
+            padding: 10% 18%;
+          margin: 0px 10px 10px 0px;
+          float: left;
+            border-radius: 10px;
+            font-family: 'Pacifico', cursive;
+            font-size: 25px;
+            color: #FFF;
+            text-decoration: none;	
+            margin-top : 100%;
+        }
+        
+            .action-button-touch
+        {
+            padding: 10% 18%;
+          margin: 0px 10px 10px 0px;
+          float: left;
+            border-radius: 10px;
+            font-family: 'Pacifico', cursive;
+            font-size: 25px;
+            color: #FFF;
+            text-decoration: none;	
+            margin-top : 100%;
+            -ms-transform: translate(0px,5px);
+                transform: translate(0px,5px);
+          -webkit-transform: translate(0px,5px);
+            border-bottom: 1px solid ;
+        }
+
+        .red
+        {
+            background-color: #E74C3C;
+            border-bottom: 5px solid #BD3E31;
+            text-shadow: 0px -2px #BD3E31;
+        }
+
+        .green
+        {
+            background-color: #82BF56;
+            border-bottom: 5px solid #669644;
+            text-shadow: 0px -2px #669644;
+        }
+
+        .action-button:focus,.action-button:active
+        {
+            -ms-transform: translate(0px,5px);
+                transform: translate(0px,5px);
+          -webkit-transform: translate(0px,5px);
+            border-bottom: 1px solid;
+        }

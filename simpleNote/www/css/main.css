@@ -1,0 +1,145 @@
+/*
+ui-radio:nth-child(1) .ui-icon-radio-on.ui-icon{
+    background-color : red;
+}
+
+ui-radio:nth-child(2) .ui-icon-radio-on.ui-icon{
+    background-color : green;
+}
+
+ui-radio:nth-child(3) .ui-icon-radio-on.ui-icon{
+    background-color : white ;
+}*/
+
+html{
+   -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+}
+
+#todoPopup{
+    min-width: 50% !important;
+    min-height : 50% !important;
+    margin : 0 auto;
+    opacity : 1;
+    border-left : 5px dashed gray ;
+    padding-left : 15%;
+    
+}
+#done{
+     border-right:5px solid #12AA62;
+
+}
+
+#notDone{
+    border-right : 5px solid #D74336;
+
+}
+
+#doing{
+     border-right : 5px solid #FFC500;
+
+}
+
+#done,#doing,#notDone,#del{
+        font-size : 1.3em;
+        margin : 5% 0%;
+}
+#del{
+    font-size : 1.3em;
+}
+#splash{
+    z-index : 999999;
+    background : url('../img/splash.svg');
+    width : 100%;
+    height : 100%;
+}
+.list_item{
+    padding : 20% 0%;
+}
+.ui-radio:nth-child(1) .ui-icon-radio-on.ui-icon{
+        color:red;
+}
+.ui-radio:nth-child(2) .ui-icon-radio-on.ui-icon{
+        color:yellowgreen;
+}
+.ui-radio:nth-child(3) .ui-icon-radio-on.ui-icon{
+        color:black;
+}
+
+/*MUC DO QUAN TRONG :*/
+        .level1{
+            color :#D74336;
+        }
+        .level2{
+            color : #52A637;
+        }
+
+/*DA HOAN THANH HAY CHUA*/
+        .done{
+            border-right:5px solid #12AA62;
+        }
+        .not-done{
+            
+        }
+        .doing{
+            border-right : 5px solid #FFC500;
+        }
+
+/*DIALOG : */
+    .dialog-status{
+        position : absolute;
+        bottom : 5%;
+        left : 20%;
+        text-align : center;
+        border  : 2px solid white ;
+        padding : 1%;
+        border-radius : 5%;
+        background-color : white;
+        opacity : 0.8;
+        color : black;
+    }
+
+/*button add list */
+    .addListButton{
+        position : fixed;
+        bottom : 5%;
+        right : 5%;
+        font-size : 2em;
+        border : 1px solid black ;
+        border-radius : 50% ;
+        padding :1%;
+        opacity : 0.7;
+        z-index : 5;
+
+    }
+         .addListButton:active{
+             opacity : 1;
+             transition : all .5s ease ;
+             font-size : 2.5em;
+         }
+
+    .dialogList{
+        position : absolute;
+        z-index: 999;
+        background-color : white !important ;
+        width : 100%;
+        height : 100% ;
+         text-align : left;
+        border :1px solid gray;
+    }
+        .dialogList p{
+            padding-left : 0.7%;
+            margin-top : 2%;
+        }
+        .dialogList .close-btn{
+            text-align : right !important;
+            font-size : 1.5em;
+            padding-right : 1%;
+            float : right ;
+        }
+.list_wrapper{
+    min-height : 20%;
+}
+    
+    

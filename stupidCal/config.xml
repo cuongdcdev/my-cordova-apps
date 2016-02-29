@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.vodanh.SimpleTalkingNote" version="0.9.0" versionCode="10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://google.com/ns/1.0">
+    <name>Stupid Caculator </name>
+    <description>
+        a Super supid calculator with remember what you calculated ! 
+    </description>
+    <author email="duongcuong96@gmail.com">
+       VodanhX
+    </author>
+    <icon gap:platform="android" gap:qualifier="mdpi" src="icon.png" />
+    <icon gap:platform="winphone" src="icon.png" />
+    <icon gap:platform="winphone" gap:role="background" src="icon.png" />
+    <engine name="android" spec="~5.1.0" />
+</widget>

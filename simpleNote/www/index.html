@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+    <script type='text/javascript' src='js/'></script>
+    <!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <!-- jQueryMobileCSS - original without styling -->
+    <link rel="stylesheet" href="css/jquerymobile.css" />
+
+    <!-- nativeDroid core CSS -->
+    <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+    <!-- nativeDroid: Light/Dark -->
+    <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css" id='jQMnDTheme' />
+
+    <!-- nativeDroid: Color Schemes -->
+    <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+    <link rel='stylesheet' href='css/main.css' />
+    <script src='js/jquery.js'></script>
+    <script src='js/jquery.mobile-1.3.1.min.js'></script>
+    <script src='cordova.js'></script>
+    <script type='text/javascript' src='js/todo.js'></script>
+    <title>
+        Viết ghi chú ! by #Vodanh
+    </title>
+</head>
+
+<body >
+<div id='splash' ></div>
+    <div data-role="page" data-theme='b' id='page_content'>
+        
+        <p  id='addList'  class='ui-icon-edit addListButton'></p>
+        <!--dialog goes here !!!!!!!!!! -->
+        
+        <div id="todoDialogAdd"  data-role='main' class='dialogList' style='display:none'>
+            <span class='close-btn ui-btn ui-icon-delete ui-btn-icon-right'></span>
+                <p data-role="list-divider">tóm tắt</p>
+                <input type='text' id="title" >
+                <p data-role="list-divider">ghi chú </p>
+                <textarea id='content'></textarea>
+
+                <li data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="vertical" data-mini="false">
+                        <legend>Chọn mức độ</legend>
+                        <div id="level">
+                            <input type="radio" name="radio-choice-a" id="radio-choice-bb" value="1" >
+                            <label for="radio-choice-bb" class='ui-color-red'>Rất quan trọng</label>
+                            <input type="radio" name="radio-choice-a" id="radio-choice-cb" value="2">
+                            <label for="radio-choice-cb">Quan trọng </label>
+                            <input type="radio" name="radio-choice-a" id="radio-choice-db" value="3" checked='checked'>
+                            <label for="radio-choice-db">Bình thường</label>
+                        </div>
+                    </fieldset>
+                </li>
+                <button id='submit' data-role="list-divider">Save</button>
+                <button id='clear_all' data-role="list-divider">Xóa tất cả </button>
+        </div><!--end dialog add button -->
+        
+        <ul id="ul_list_wrapper" data-role="listview" data-filter="true" data-filter-reveal='false' data-inset="true" data-icon="false" data-divider-theme="b" data-filter-placeholder="Tìm kiếm..." >
+            <span id="list_item">
+                  <!--          lists go here --> 
+                      
+            </span>
+        </ul>
+    
+
+        
+    
+<!--    popup : --> 
+    <div id='todoPopup' data-overlay-theme='b' class='ui-content' data-role='popup'  data-theme="a" data-dismissible='true' data-transition="pop">
+        <a href='#' data-rel='back' class='ui-icon-delete ui-btn-right'></a>
+        <div data-role='header'>
+          <h2>danh sách này : </h2>  
+        </div>
+        
+        <div data-role='main'>
+            <p id='done'>hoàn thành</p>
+            <p id='notDone'>chưa hoàn thành </p>
+            <p id='doing'>đang tiến hành </p>
+            <p id='del'>xóa</p>
+        </div>
+    </div><!--end popup list --> 
+    <p id='deletePopup' class='dialog-status' style='display:none' > đã xóa </p>
+    
+    
+</body>
+
+    
+    
+</html>
